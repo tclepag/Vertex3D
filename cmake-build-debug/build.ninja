@@ -49,12 +49,40 @@ cmake_ninja_workdir = C$:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/
 
 build cmake_object_order_depends_target_Vertex3D: phony || cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw
 
-build CMakeFiles/Vertex3D.dir/main.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/main.cpp || cmake_object_order_depends_target_Vertex3D
-  DEP_FILE = CMakeFiles\Vertex3D.dir\main.cpp.obj.d
+build CMakeFiles/Vertex3D.dir/src/main.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/main.cpp || cmake_object_order_depends_target_Vertex3D
+  DEP_FILE = CMakeFiles\Vertex3D.dir\src\main.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glfw-src/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include
   OBJECT_DIR = CMakeFiles\Vertex3D.dir
-  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir
+  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src
+
+build CMakeFiles/Vertex3D.dir/src/libraries/shaders/Shader.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/libraries/shaders/Shader.cpp || cmake_object_order_depends_target_Vertex3D
+  DEP_FILE = CMakeFiles\Vertex3D.dir\src\libraries\shaders\Shader.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glfw-src/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include
+  OBJECT_DIR = CMakeFiles\Vertex3D.dir
+  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\libraries\shaders
+
+build CMakeFiles/Vertex3D.dir/src/libraries/shaders/VertexBufferObject.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/libraries/shaders/VertexBufferObject.cpp || cmake_object_order_depends_target_Vertex3D
+  DEP_FILE = CMakeFiles\Vertex3D.dir\src\libraries\shaders\VertexBufferObject.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glfw-src/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include
+  OBJECT_DIR = CMakeFiles\Vertex3D.dir
+  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\libraries\shaders
+
+build CMakeFiles/Vertex3D.dir/src/libraries/shaders/ElementBufferObject.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/libraries/shaders/ElementBufferObject.cpp || cmake_object_order_depends_target_Vertex3D
+  DEP_FILE = CMakeFiles\Vertex3D.dir\src\libraries\shaders\ElementBufferObject.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glfw-src/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include
+  OBJECT_DIR = CMakeFiles\Vertex3D.dir
+  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\libraries\shaders
+
+build CMakeFiles/Vertex3D.dir/src/libraries/shaders/VertexArrayObject.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/libraries/shaders/VertexArrayObject.cpp || cmake_object_order_depends_target_Vertex3D
+  DEP_FILE = CMakeFiles\Vertex3D.dir\src\libraries\shaders\VertexArrayObject.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glfw-src/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include
+  OBJECT_DIR = CMakeFiles\Vertex3D.dir
+  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\libraries\shaders
 
 
 # =============================================================================
@@ -64,7 +92,7 @@ build CMakeFiles/Vertex3D.dir/main.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Deb
 #############################################
 # Link the executable Vertex3D.exe
 
-build Vertex3D.exe: CXX_EXECUTABLE_LINKER__Vertex3D_Debug CMakeFiles/Vertex3D.dir/main.cpp.obj | _deps/glfw-build/src/libglfw3.a _deps/glad-build/libglad.a || _deps/glad-build/libglad.a _deps/glfw-build/src/libglfw3.a
+build Vertex3D.exe: CXX_EXECUTABLE_LINKER__Vertex3D_Debug CMakeFiles/Vertex3D.dir/src/main.cpp.obj CMakeFiles/Vertex3D.dir/src/libraries/shaders/Shader.cpp.obj CMakeFiles/Vertex3D.dir/src/libraries/shaders/VertexBufferObject.cpp.obj CMakeFiles/Vertex3D.dir/src/libraries/shaders/ElementBufferObject.cpp.obj CMakeFiles/Vertex3D.dir/src/libraries/shaders/VertexArrayObject.cpp.obj | _deps/glfw-build/src/libglfw3.a _deps/glad-build/libglad.a || _deps/glad-build/libglad.a _deps/glfw-build/src/libglfw3.a
   FLAGS = -g
   LINK_LIBRARIES = _deps/glfw-build/src/libglfw3.a  _deps/glad-build/libglad.a  -lopengl32  -lopengl32  -lglu32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Vertex3D.dir

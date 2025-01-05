@@ -19,5 +19,13 @@ if (OpenGL_FOUND)
     link_directories(${OpenGL_LIBRARY_DIRS})
 endif ()
 
-add_executable(Vertex3D main.cpp)
+add_executable(Vertex3D src/main.cpp
+        src/libraries/shaders/Shader.cpp
+        src/libraries/shaders/Shader.h
+        src/libraries/shaders/VertexBufferObject.cpp
+        src/libraries/shaders/VertexBufferObject.h
+        src/libraries/shaders/ElementBufferObject.cpp
+        src/libraries/shaders/ElementBufferObject.h
+        src/libraries/shaders/VertexArrayObject.cpp
+        src/libraries/shaders/VertexArrayObject.h)
 target_link_libraries(Vertex3D glfw glad opengl32 ${OPENGL_LIBRARIES})
