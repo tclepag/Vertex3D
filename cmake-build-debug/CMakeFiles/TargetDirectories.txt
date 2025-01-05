@@ -1,0 +1,3 @@
+C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/CMakeFiles/Vertex3D.dir
+C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/CMakeFiles/rebuild_cache.dir
