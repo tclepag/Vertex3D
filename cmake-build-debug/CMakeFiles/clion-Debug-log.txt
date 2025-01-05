@@ -10,6 +10,6 @@ CMake Deprecation Warning at cmake-build-debug/_deps/glad-src/CMakeLists.txt:1 (
   CMake that the project does not need compatibility with older versions.
 
 
--- Configuring done (1.2s)
+-- Configuring done (1.5s)
 -- Generating done (0.1s)
 -- Build files have been written to: C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug

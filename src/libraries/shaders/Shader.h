@@ -20,6 +20,7 @@ public:
     Shader(const char* vertex_file_path, const char* fragment_file_path);
     void Activate();
     void Delete();
+    void compileErrors(unsigned int shader, const char* type);
 };
 
 } // Vertex3D

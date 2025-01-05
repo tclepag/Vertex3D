@@ -7,25 +7,28 @@
 #include "libraries/shaders/VertexArrayObject.h"
 #include "libraries/shaders/ElementBufferObject.h"
 #include "libraries/shaders/VertexBufferObject.h"
+#include "libraries/visual/Texture.h"
+#include "libraries/stb.h"
+
+using namespace Vertex3D;
 
 int main()
 {
 	// Vertices coordinates
 	GLfloat vertices[] =
 	{
-		-0.5f, -0.5f * float(sqrt(3)) / 3, 0.0f, // Lower left corner
-		0.5f, -0.5f * float(sqrt(3)) / 3, 0.0f, // Lower right corner
-		0.0f, 0.5f * float(sqrt(3)) * 2 / 3, 0.0f, // Upper corner
-		-0.5f / 2, 0.5f * float(sqrt(3)) / 6, 0.0f, // Inner left
-		0.5f / 2, 0.5f * float(sqrt(3)) / 6, 0.0f, // Inner right
-		0.0f, -0.5f * float(sqrt(3)) / 3, 0.0f // Inner down
+		// POSITION					 COLOR			 TEXTURE	//
+		// X,    Y,    Z,	     R,	   G,	 B		 X,	   Y   //
+		-0.5f, -0.5f, 0.0f, 	1.0f, 0.0f, 0.0f,	0.0f, 0.0f, // Lower Left Corner
+		-0.5f, 0.5f, 0.0f, 		1.0f, 1.0f, 0.0f,	0.0f, 1.0f, // Upper Left Corner
+		0.5f, 0.5f, 0.0f, 		0.0f, 0.0f, 1.0f,	1.0f, 1.0f, // Upper Right Corner
+		0.5f, -0.5f, 0.0f, 		1.0f, 1.0f, 1.0f,	1.0f, 0.0f // Lower Left Corner
 	};
 
 	GLuint indices[] =
 	{
-		0, 3, 5, // Lower Left triangle
-		3, 2, 4, // Lower right triangle
-		5, 4, 1 // Upper triangle
+		0, 2, 1,
+		0, 3, 2
 	};
 
 	// Initialize GLFW
@@ -63,25 +66,32 @@ int main()
 	// In this case the viewport goes from x = 0, y = 0, to x = 800, y = 800
 	glViewport(0, 0, 800, 800);
 
-
 	// Create Shader program and give it the default vertice and default fragment shader
-	Vertex3D::Shader shaderProgram("src/shaders/default.vert", "src/shaders/default.frag");
+	Shader shaderProgram("src/shaders/default.vert", "src/shaders/default.frag");
 	// Generate the VertexArrayObject
-	Vertex3D::VertexArrayObject VAO1;
+	VertexArrayObject VAO1;
 	// Bind the VertexArrayObject
 	VAO1.Bind();
 
 	// Generates VertexBufferObject and links to the vertices given
-	Vertex3D::VertexBufferObject VBO1(vertices, sizeof(vertices));
+	VertexBufferObject VBO1(vertices, sizeof(vertices));
 	// Generates ElementBufferObject and links to the indices given
-	Vertex3D::ElementBufferObject EBO1(indices, sizeof(indices));
+	ElementBufferObject EBO1(indices, sizeof(indices));
 
 	// Links the VertexArrayObject to the VertexBufferObject starting at the index 0
-	VAO1.Link(VBO1, 0);
+	VAO1.Link(VBO1, 0, 3, GL_FLOAT, 8 * sizeof(float), (void*)0);
+	VAO1.Link(VBO1, 1, 3, GL_FLOAT, 8 * sizeof(float), (void*)(3 * sizeof(float)));
+	VAO1.Link(VBO1, 2, 2, GL_FLOAT, 8 * sizeof(float), (void*)(6 * sizeof(float)));
 	// Unbinds all to prevent accidentally modifying them
 	VAO1.Unbind();
 	VBO1.Unbind();
 	EBO1.Unbind();
+
+	GLuint uniID = glGetUniformLocation(shaderProgram.ID, "scale");
+
+	// Texture
+	Texture testTexture = Texture("src/textures/dev/keryu.png", GL_TEXTURE_2D, GL_TEXTURE0, GL_RGB, GL_UNSIGNED_BYTE);
+	testTexture.texUnit(shaderProgram, "tex0", 0);
 
 	// Main while loop
 	while (!glfwWindowShouldClose(window))
@@ -92,6 +102,8 @@ int main()
 		glClear(GL_COLOR_BUFFER_BIT);
 		// Tell OpenGL which Shader Program we want to use
 		shaderProgram.Activate();
+		glUniform1f(uniID, 0.5f);
+		testTexture.Bind();
 		// Bind the VAO so OpenGL knows to use it
 		VAO1.Bind();
 		// Draw the triangle using the GL_TRIANGLES primitive
@@ -108,6 +120,7 @@ int main()
 	VAO1.Delete();
 	VBO1.Delete();
 	EBO1.Delete();
+	testTexture.Delete();
 	shaderProgram.Delete();
 	// Delete window before ending the program
 	glfwDestroyWindow(window);

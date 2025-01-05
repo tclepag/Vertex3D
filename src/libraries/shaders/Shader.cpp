@@ -31,6 +31,7 @@ namespace Vertex3D {
         glShaderSource(vertexShader, 1, &vertexSource, NULL);
         // Compile the Vertex Shader into machine code
         glCompileShader(vertexShader);
+        compileErrors(vertexShader, "VERTEX");
 
         // Create Fragment Shader Object and get its reference
         GLuint fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
@@ -38,6 +39,7 @@ namespace Vertex3D {
         glShaderSource(fragmentShader, 1, &fragmentSource, NULL);
         // Compile the Vertex Shader into machine code
         glCompileShader(fragmentShader);
+        compileErrors(fragmentShader, "FRAGMENT");
 
         // Create Shader Program Object and get its reference
         ID = glCreateProgram();
@@ -46,6 +48,7 @@ namespace Vertex3D {
         glAttachShader(ID, fragmentShader);
         // Wrap-up/Link all the shaders together into the Shader Program
         glLinkProgram(ID);
+        compileErrors(ID, "PROGRAM");
 
         // Delete the now useless Vertex and Fragment Shader objects
         glDeleteShader(vertexShader);
@@ -60,5 +63,25 @@ namespace Vertex3D {
         glDeleteProgram(ID);
     }
 
+    void Shader::compileErrors(unsigned int shader, const char *type) {
+        GLint hasCompiled;
+        char infoLog[1024];
+        if (type != "PROGRAM") {
+            glGetShaderiv(shader, GL_COMPILE_STATUS, &hasCompiled);
+            if (hasCompiled == GL_FALSE) {
+                glGetShaderInfoLog(shader, 1024, nullptr, infoLog);
+                std::cout << "ERROR::SHADER_COMPILATION_ERRORS1" << std::endl;
+                printf("%s\n", infoLog);
+            }
+        }
+        else {
+            glGetProgramiv(ID, GL_LINK_STATUS, &hasCompiled);
+            if (hasCompiled == GL_FALSE) {
+                glGetProgramInfoLog(ID, 1024, nullptr, infoLog);
+                std::cout << "ERROR::SHADER_COMPILATION_ERRORS2::" << infoLog << std::endl;
+                printf("%s\n", infoLog);
+            }
+        }
+    }
 
 } // Vertex3D

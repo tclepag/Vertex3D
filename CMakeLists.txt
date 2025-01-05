@@ -27,5 +27,9 @@ add_executable(Vertex3D src/main.cpp
         src/libraries/shaders/ElementBufferObject.cpp
         src/libraries/shaders/ElementBufferObject.h
         src/libraries/shaders/VertexArrayObject.cpp
-        src/libraries/shaders/VertexArrayObject.h)
+        src/libraries/shaders/VertexArrayObject.h
+        src/libraries/stb.cpp
+        src/libraries/stb.h
+        src/libraries/visual/Texture.cpp
+        src/libraries/visual/Texture.h)
 target_link_libraries(Vertex3D glfw glad opengl32 ${OPENGL_LIBRARIES})
