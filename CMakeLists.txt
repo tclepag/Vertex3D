@@ -12,6 +12,10 @@ FETCHCONTENT_MAKEAVAILABLE(GLFW)
 FETCHCONTENT_DECLARE(glad GIT_REPOSITORY https://github.com/Dav1dde/glad.git)
 FETCHCONTENT_MAKEAVAILABLE(glad)
 
+# GLM Packages
+FETCHCONTENT_DECLARE(glm GIT_REPOSITORY https://github.com/icaven/glm.git)
+FETCHCONTENT_MAKEAVAILABLE(glm)
+
 # OpenGL Packages
 find_package(OpenGL REQUIRED)
 if (OpenGL_FOUND)
@@ -31,5 +35,9 @@ add_executable(Vertex3D src/main.cpp
         src/libraries/stb.cpp
         src/libraries/stb.h
         src/libraries/visual/Texture.cpp
-        src/libraries/visual/Texture.h)
-target_link_libraries(Vertex3D glfw glad opengl32 ${OPENGL_LIBRARIES})
+        src/libraries/visual/Texture.h
+        src/libraries/classes/Camera.cpp
+        src/libraries/classes/Camera.h
+        src/libraries/engine/Timer.cpp
+        src/libraries/engine/Timer.h)
+target_link_libraries(Vertex3D glfw glad glm opengl32 ${OPENGL_LIBRARIES})

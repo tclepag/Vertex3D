@@ -10,6 +10,8 @@ CMake Deprecation Warning at cmake-build-debug/_deps/glad-src/CMakeLists.txt:1 (
   CMake that the project does not need compatibility with older versions.
 
 
--- Configuring done (1.5s)
--- Generating done (0.1s)
+-- GLM: Version 1.0.0
+-- GLM: Build with C++ features auto detection
+-- Configuring done (1.6s)
+-- Generating done (0.2s)
 -- Build files have been written to: C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug

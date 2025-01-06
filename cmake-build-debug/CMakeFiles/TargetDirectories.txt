@@ -34,3 +34,16 @@ C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/CMakeFi
 C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/CMakeFiles/install.dir
 C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/CMakeFiles/install/local.dir
 C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/CMakeFiles/install/strip.dir
+C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-build/CMakeFiles/edit_cache.dir
+C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-build/CMakeFiles/rebuild_cache.dir
+C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-build/CMakeFiles/list_install_components.dir
+C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-build/CMakeFiles/install.dir
+C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-build/CMakeFiles/install/local.dir
+C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-build/CMakeFiles/install/strip.dir
+C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-build/glm/CMakeFiles/glm.dir
+C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-build/glm/CMakeFiles/edit_cache.dir
+C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-build/glm/CMakeFiles/rebuild_cache.dir
+C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-build/glm/CMakeFiles/list_install_components.dir
+C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-build/glm/CMakeFiles/install.dir
+C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-build/glm/CMakeFiles/install/local.dir
+C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-build/glm/CMakeFiles/install/strip.dir

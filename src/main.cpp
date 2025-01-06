@@ -1,16 +1,30 @@
+// C++ Resources
 #include <iostream>
 #include <cmath>
+
+// OpenGL Resources
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
+#include <glm/glm.hpp>
 
+// GLM Resources
+#include <glm/gtc/type_ptr.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+
+// Library Resources
 #include "libraries/shaders/Shader.h"
 #include "libraries/shaders/VertexArrayObject.h"
 #include "libraries/shaders/ElementBufferObject.h"
 #include "libraries/shaders/VertexBufferObject.h"
 #include "libraries/visual/Texture.h"
 #include "libraries/stb.h"
+#include "libraries/classes/Camera.h"
+#include "libraries/engine/Timer.h"
 
 using namespace Vertex3D;
+
+const unsigned int width = 800;
+const unsigned int height = 800;
 
 int main()
 {
@@ -19,16 +33,21 @@ int main()
 	{
 		// POSITION					 COLOR			 TEXTURE	//
 		// X,    Y,    Z,	     R,	   G,	 B		 X,	   Y   //
-		-0.5f, -0.5f, 0.0f, 	1.0f, 0.0f, 0.0f,	0.0f, 0.0f, // Lower Left Corner
-		-0.5f, 0.5f, 0.0f, 		1.0f, 1.0f, 0.0f,	0.0f, 1.0f, // Upper Left Corner
-		0.5f, 0.5f, 0.0f, 		0.0f, 0.0f, 1.0f,	1.0f, 1.0f, // Upper Right Corner
-		0.5f, -0.5f, 0.0f, 		1.0f, 1.0f, 1.0f,	1.0f, 0.0f // Lower Left Corner
+		-0.5f, 0.0f, 0.5f, 	1.0f, 0.0f, 0.0f,	0.0f, 0.0f,
+		-0.5f, 0.0f, -0.5f, 	1.0f, 1.0f, 0.0f,	5.0f, 1.0f,
+		0.5f, 0.0f, -0.5f, 		0.0f, 0.0f, 1.0f,	1.0f, 1.0f,
+		0.5f, 0.0f, 0.5f, 		1.0f, 1.0f, 1.0f,	5.0f, 0.0f,
+		0.0f, 0.8f, 0.0f, 		1.0f, 1.0f, 1.0f,	2.5f, 5.0f
 	};
 
 	GLuint indices[] =
 	{
-		0, 2, 1,
-		0, 3, 2
+		0, 1, 2,
+		0, 2, 3,
+		0, 1, 4,
+		1, 2, 4,
+		2, 3, 4,
+		3, 0, 4
 	};
 
 	// Initialize GLFW
@@ -49,7 +68,7 @@ int main()
 	}
 
 	// Create a GLFWwindow object
-	GLFWwindow* window = glfwCreateWindow(800, 800, "Vertex3DEngine", nullptr, nullptr);
+	GLFWwindow* window = glfwCreateWindow(width, height, "Vertex3DEngine", nullptr, nullptr);
 	// Error check if the window fails to create
 	if (window == nullptr)
 	{
@@ -64,7 +83,10 @@ int main()
 	gladLoadGL();
 	// Specify the viewport of OpenGL in the Window
 	// In this case the viewport goes from x = 0, y = 0, to x = 800, y = 800
-	glViewport(0, 0, 800, 800);
+	glViewport(0, 0, width, height);
+
+	// Setup game timer for deltaTime and other stuff
+	extern Timer *timer;
 
 	// Create Shader program and give it the default vertice and default fragment shader
 	Shader shaderProgram("src/shaders/default.vert", "src/shaders/default.frag");
@@ -87,11 +109,13 @@ int main()
 	VBO1.Unbind();
 	EBO1.Unbind();
 
-	GLuint uniID = glGetUniformLocation(shaderProgram.ID, "scale");
-
 	// Texture
 	Texture testTexture = Texture("src/textures/dev/keryu.png", GL_TEXTURE_2D, GL_TEXTURE0, GL_RGB, GL_UNSIGNED_BYTE);
 	testTexture.texUnit(shaderProgram, "tex0", 0);
+
+	glEnable(GL_DEPTH_TEST);
+
+	Camera camera(width, height, glm::vec3(0.0f, 0.0f, 2.0f));
 
 	// Main while loop
 	while (!glfwWindowShouldClose(window))
@@ -99,15 +123,20 @@ int main()
 		// Specify the color of the background
 		glClearColor(0.07f, 0.13f, 0.17f, 1.0f);
 		// Clean the back buffer and assign the new color to it
-		glClear(GL_COLOR_BUFFER_BIT);
+		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 		// Tell OpenGL which Shader Program we want to use
 		shaderProgram.Activate();
-		glUniform1f(uniID, 0.5f);
+
+		// Handles camera inputs
+		camera.Inputs(window);
+		// Updates and exports the camera matrix to the Vertex Shader
+		camera.Matrix(45.0f, 0.1f, 100.0f, shaderProgram, "camMatrix");
+
 		testTexture.Bind();
 		// Bind the VAO so OpenGL knows to use it
 		VAO1.Bind();
 		// Draw the triangle using the GL_TRIANGLES primitive
-		glDrawElements(GL_TRIANGLES, 9, GL_UNSIGNED_INT, 0);
+		glDrawElements(GL_TRIANGLES, sizeof(indices)/sizeof(int), GL_UNSIGNED_INT, 0);
 		// Swap the back buffer with the front buffer
 		glfwSwapBuffers(window);
 		// Take care of all GLFW events
