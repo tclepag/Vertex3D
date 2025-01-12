@@ -1,9 +1,13 @@
 # Vertex3D
 ## What is Vertex3D?
-Vertex3D is a passion project game engine that was made to learn how game engines were built.
-This game engine hopes to achieve many features that most well-known game engines already have, whilst that is my goal, this engine may not be suitable for your needs. 
-It may need refactoring, bug fixes and even completely rewriting parts of the engine. But If you chose to take a look at what I was able to create, and try it out for yourself, thank you :]
+Vertex3D is a passion project, made for the purpose of learning how game engines work on the inside. Because of that reason, Vertex3D may not be stable for actual use. <br>
+If you stumbled across this or wanted to test out what this engine can do, thank you :)
+
+# ENGINE IS STILL BEING BUILT (AKA NO FUNCTIONALITY)
 
 ### Other Info
 * Made with Jetbrains CLion (C++)
-* CMake file automatically downloads GLM, GLAD, GLFW, ETC... to prevent the clutter and time-consuming process of downloading the right files
+
+### Third Party Sources
+* <a href="https://github.com/libsdl-org/SDL">Simple DirectMedia Layer 3.0</a> (Uses <a href="https://github.com/mmozeiko/build-sdl3">build-sdl3</a> for prebuilt libraries)
+* <a href="https://vulkan.lunarg.com/">Vulkan SDK</a> (Uses <a href="https://vulkan.lunarg.com/sdk/home#windows">Vulkan Windows Build</a>)
