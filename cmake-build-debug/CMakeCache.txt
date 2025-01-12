@@ -340,6 +340,14 @@ FETCHCONTENT_SOURCE_DIR_GLFW:PATH=
 FETCHCONTENT_SOURCE_DIR_GLM:PATH=
 
 //When not empty, overrides where to find pre-populated content
+// for img
+FETCHCONTENT_SOURCE_DIR_IMG:PATH=
+
+//When not empty, overrides where to find pre-populated content
+// for imgui
+FETCHCONTENT_SOURCE_DIR_IMGUI:PATH=
+
+//When not empty, overrides where to find pre-populated content
 // for SDL
 FETCHCONTENT_SOURCE_DIR_SDL:PATH=
 
@@ -358,6 +366,12 @@ FETCHCONTENT_UPDATES_DISCONNECTED_GLFW:BOOL=OFF
 
 //Enables UPDATE_DISCONNECTED behavior just for population of glm
 FETCHCONTENT_UPDATES_DISCONNECTED_GLM:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of img
+FETCHCONTENT_UPDATES_DISCONNECTED_IMG:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of imgui
+FETCHCONTENT_UPDATES_DISCONNECTED_IMGUI:BOOL=OFF
 
 //Enables UPDATE_DISCONNECTED behavior just for population of SDL
 FETCHCONTENT_UPDATES_DISCONNECTED_SDL:BOOL=OFF
@@ -544,6 +558,9 @@ SDL2_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 SDL2_SOURCE_DIR:STATIC=C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/sdl2-src
+
+//The directory containing a CMake configuration file for SDL3.
+SDL3_DIR:PATH=SDL3_DIR-NOTFOUND
 
 //Path to a library.
 SDLMAIN_LIBRARY:FILEPATH=SDLMAIN_LIBRARY-NOTFOUND
@@ -879,6 +896,9 @@ glm_IS_TOP_LEVEL:STATIC=OFF
 //Value Computed by CMake
 glm_SOURCE_DIR:STATIC=C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src
 
+//The directory containing a CMake configuration file for imgui.
+imgui_DIR:PATH=imgui_DIR-NOTFOUND
+
 
 ########################
 # INTERNAL cache entries
@@ -1102,7 +1122,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[opengl32][c ][v()]
 //Details about finding Python
 FIND_PACKAGE_MESSAGE_DETAILS_Python:INTERNAL=[C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.13_3.13.496.0_x64__qbz5n2kfra8p0/python3.13.exe][cfound components: Interpreter ][v3.13.1()]
 //Details about finding SDL
-FIND_PACKAGE_MESSAGE_DETAILS_SDL:INTERNAL=[C:/VulkanSDK/1.3.296.0/Lib/SDL2/SDL2.lib][C:/VulkanSDK/1.3.296.0/Include/SDL2][v2.30.8()]
+FIND_PACKAGE_MESSAGE_DETAILS_SDL:INTERNAL=[C:/SDL/lib/SDL3.lib][C:/SDL/include][v()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Details about finding Vulkan

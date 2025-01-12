@@ -1,20 +1,12 @@
-#version 330 core
+#version 450
 
-// Variables
-layout (location = 0) in vec3 aPos;
-layout (location = 1) in vec3 aColor;
-layout (location = 2) in vec2 aTex;
-
-// Output variables
-out vec3 color;
-out vec2 texCoord;
-
-// Global Variables
-uniform mat4 camMatrix;
+vec2 positions[3] = vec2[] (
+    vec2(0.0, -0.5),
+    vec2(0.0, 0.5),
+    vec2(-0.5, -0.5)
+);
 
 void main()
 {
-    gl_Position = camMatrix * vec4(aPos, 1.0);
-    color = aColor;
-    texCoord = aTex;
+    gl_Position = vec4(positions[gl_VertexIndex], 0.0, 1.0);
 }

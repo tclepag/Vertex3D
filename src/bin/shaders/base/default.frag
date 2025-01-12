@@ -1,16 +1,8 @@
-#version 330 core
+#version 450
 
-// Input variables
-in vec3 color;
-in vec2 texCoord;
-
-// Output variables
-out vec4 FragColor;
-
-// Global variables
-uniform sampler2D tex0;
+layout (location = 0) out vec4 Color;
 
 void main()
 {
-    FragColor = texture(tex0, texCoord);
+    Color = vec4(1.0, 0.0, 0.0, 1.0);
 }
