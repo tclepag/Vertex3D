@@ -3,41 +3,38 @@
 cmake_minimum_required(VERSION 3.30)
 project(Vertex3D)
 
-# GLFW Packages
 include(FetchContent)
-FETCHCONTENT_DECLARE(GLFW GIT_REPOSITORY https://github.com/glfw/glfw.git)
-FETCHCONTENT_MAKEAVAILABLE(GLFW)
 
-# Glad Packages
-FETCHCONTENT_DECLARE(glad GIT_REPOSITORY https://github.com/Dav1dde/glad.git)
-FETCHCONTENT_MAKEAVAILABLE(glad)
+# Vulkan Packages
+find_package( Vulkan REQUIRED )
 
-# GLM Packages
-FETCHCONTENT_DECLARE(glm GIT_REPOSITORY https://github.com/icaven/glm.git)
-FETCHCONTENT_MAKEAVAILABLE(glm)
+if ( Vulkan_FOUND )
+    message( STATUS "Found Vulkan: ${Vulkan_LIBRARIES}" )
+    # Add Vulkan include directories and libraries to your target
+    include_directories( ${Vulkan_INCLUDE_DIRS} )
+    link_directories( ${Vulkan_LIBRARIES} )
 
-# OpenGL Packages
-find_package(OpenGL REQUIRED)
-if (OpenGL_FOUND)
-    include_directories(${OpenGL_INCLUDE_DIRS})
-    link_directories(${OpenGL_LIBRARY_DIRS})
+    # Add SDL
+    set(SDL_INCLUDE_DIR "C:/VulkanSDK/1.3.296.0/Include/SDL2")
+    set(SDL_LIBRARY "C:/VulkanSDK/1.3.296.0/Lib/SDL2/SDL2.lib")  # or .so/.dll depending on your platform
+
+    include_directories(${SDL_INCLUDE_DIR})
+    link_directories(${SDL_LIBRARY})
+
+    # Find SDL
+    find_package( SDL REQUIRED )
+
+else ()
+    message( FATAL_ERROR "Could not find Vulkan SDK" )
 endif ()
 
-add_executable(Vertex3D src/main.cpp
-        src/libraries/shaders/Shader.cpp
-        src/libraries/shaders/Shader.h
-        src/libraries/shaders/VertexBufferObject.cpp
-        src/libraries/shaders/VertexBufferObject.h
-        src/libraries/shaders/ElementBufferObject.cpp
-        src/libraries/shaders/ElementBufferObject.h
-        src/libraries/shaders/VertexArrayObject.cpp
-        src/libraries/shaders/VertexArrayObject.h
-        src/libraries/stb.cpp
-        src/libraries/stb.h
-        src/libraries/visual/Texture.cpp
-        src/libraries/visual/Texture.h
-        src/libraries/classes/Camera.cpp
-        src/libraries/classes/Camera.h
-        src/libraries/engine/Timer.cpp
-        src/libraries/engine/Timer.h)
-target_link_libraries(Vertex3D glfw glad glm opengl32 ${OPENGL_LIBRARIES})
+add_executable( Vertex3D src/main.cpp
+        src/bin/cpp/engine/vk/Vulkan.cpp
+        src/bin/cpp/engine/vk/Vulkan.h
+)
+target_link_libraries(
+        Vertex3D
+        Vulkan::Vulkan
+        ${VULKAN_LIBRARIES}
+        ${SDL_LIBRARY}
+)
