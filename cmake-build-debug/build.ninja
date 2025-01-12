@@ -56,13 +56,6 @@ build CMakeFiles/Vertex3D.dir/src/main.cpp.obj: CXX_COMPILER__Vertex3D_unscanned
   OBJECT_DIR = CMakeFiles\Vertex3D.dir
   OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src
 
-build CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/vk/Vulkan.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/cpp/engine/vk/Vulkan.cpp || cmake_object_order_depends_target_Vertex3D
-  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\vk\Vulkan.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -isystem C:/SDL/include -isystem C:/VulkanSDK/1.3.296.0/Include
-  OBJECT_DIR = CMakeFiles\Vertex3D.dir
-  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\vk
-
 build CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_impl_vulkan.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/include/imgui/imgui_impl_vulkan.cpp || cmake_object_order_depends_target_Vertex3D
   DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\include\imgui\imgui_impl_vulkan.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
@@ -105,26 +98,26 @@ build CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_demo.cpp.obj: CXX_COMP
   OBJECT_DIR = CMakeFiles\Vertex3D.dir
   OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\include\imgui
 
-build CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/vk/Renderer.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/cpp/engine/vk/Renderer.cpp || cmake_object_order_depends_target_Vertex3D
-  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\vk\Renderer.cpp.obj.d
+build CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/vk/Vulkan.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/cpp/engine/vk/Vulkan.cpp || cmake_object_order_depends_target_Vertex3D
+  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\vk\Vulkan.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -isystem C:/SDL/include -isystem C:/VulkanSDK/1.3.296.0/Include
   OBJECT_DIR = CMakeFiles\Vertex3D.dir
   OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\vk
 
-build CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/vk/Pipeline.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/cpp/engine/vk/Pipeline.cpp || cmake_object_order_depends_target_Vertex3D
-  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\vk\Pipeline.cpp.obj.d
+build CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/sdl/SDLWindow.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/cpp/engine/sdl/SDLWindow.cpp || cmake_object_order_depends_target_Vertex3D
+  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\sdl\SDLWindow.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -isystem C:/SDL/include -isystem C:/VulkanSDK/1.3.296.0/Include
   OBJECT_DIR = CMakeFiles\Vertex3D.dir
-  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\vk
+  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\sdl
 
-build CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/vk/VulkanDevice.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/cpp/engine/vk/VulkanDevice.cpp || cmake_object_order_depends_target_Vertex3D
-  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\vk\VulkanDevice.cpp.obj.d
+build CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/vk/vkObjects/VulkanInstance.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/cpp/engine/vk/vkObjects/VulkanInstance.cpp || cmake_object_order_depends_target_Vertex3D
+  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\vk\vkObjects\VulkanInstance.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -isystem C:/SDL/include -isystem C:/VulkanSDK/1.3.296.0/Include
   OBJECT_DIR = CMakeFiles\Vertex3D.dir
-  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\vk
+  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\vk\vkObjects
 
 
 # =============================================================================
@@ -134,10 +127,10 @@ build CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/vk/VulkanDevice.cpp.obj: CXX_CO
 #############################################
 # Link the executable Vertex3D.exe
 
-build Vertex3D.exe: CXX_EXECUTABLE_LINKER__Vertex3D_Debug CMakeFiles/Vertex3D.dir/src/main.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/vk/Vulkan.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_impl_vulkan.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_draw.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_tables.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_widgets.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_demo.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/vk/Renderer.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/vk/Pipeline.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/vk/VulkanDevice.cpp.obj | C$:/VulkanSDK/1.3.296.0/Lib/vulkan-1.lib C$:/SDL/lib/SDL3.lib
+build Vertex3D.exe: CXX_EXECUTABLE_LINKER__Vertex3D_Debug CMakeFiles/Vertex3D.dir/src/main.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_impl_vulkan.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_draw.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_tables.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_widgets.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_demo.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/vk/Vulkan.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/sdl/SDLWindow.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/vk/vkObjects/VulkanInstance.cpp.obj | C$:/VulkanSDK/1.3.296.0/Lib/vulkan-1.lib C$:/SDL/lib/SDL3.lib C$:/SDL/lib/SDL3_image.lib C$:/SDL/lib/SDL3.lib C$:/SDL/lib/SDL3_image.lib
   FLAGS = -g
-  LINK_LIBRARIES = C:/VulkanSDK/1.3.296.0/Lib/vulkan-1.lib  C:/SDL/lib/SDL3.lib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  LINK_PATH = -LC:/SDL/lib/SDL3.lib   -LC:/VulkanSDK/1.3.296.0/Lib/vulkan-1.lib
+  LINK_LIBRARIES = C:/VulkanSDK/1.3.296.0/Lib/vulkan-1.lib  C:/SDL/lib/SDL3.lib  C:/SDL/lib/SDL3_image.lib  C:/SDL/lib/SDL3.lib  C:/SDL/lib/SDL3_image.lib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_PATH = -LC:/SDL/lib/SDL3.lib   -LC:/SDL/lib/SDL3_image.lib   -LC:/VulkanSDK/1.3.296.0/Lib/vulkan-1.lib
   OBJECT_DIR = CMakeFiles\Vertex3D.dir
   POST_BUILD = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\lepag\CLionProjects\Vertex3D\cmake-build-debug && C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/lepag/.vcpkg-clion/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/Vertex3D.exe -installedDir C:/Users/lepag/.vcpkg-clion/vcpkg/installed/x64-windows/debug/bin -OutVariable out"
   PRE_LINK = cd .

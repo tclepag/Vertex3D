@@ -1122,7 +1122,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[opengl32][c ][v()]
 //Details about finding Python
 FIND_PACKAGE_MESSAGE_DETAILS_Python:INTERNAL=[C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.13_3.13.496.0_x64__qbz5n2kfra8p0/python3.13.exe][cfound components: Interpreter ][v3.13.1()]
 //Details about finding SDL
-FIND_PACKAGE_MESSAGE_DETAILS_SDL:INTERNAL=[C:/SDL/lib/SDL3.lib][C:/SDL/include][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_SDL:INTERNAL=[C:/SDL/lib/SDL3.lib;C:/SDL/lib/SDL3_image.lib][C:/SDL/include][v()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Details about finding Vulkan

@@ -19,7 +19,7 @@ set(IMGUI_SRC
 
 # SDL Packages
 set(SDL_INCLUDE_DIR "C:/SDL/include")
-set(SDL_LIBRARY "C:/SDL/lib/SDL3.lib")  # or .so/.dll depending on your platform
+set(SDL_LIBRARY "C:/SDL/lib/SDL3.lib" "C:/SDL/lib/SDL3_image.lib")
 
 include_directories(${SDL_INCLUDE_DIR})
 link_directories(${SDL_LIBRARY})
@@ -29,6 +29,7 @@ find_package( SDL REQUIRED )
 
 if ( SDL_FOUND )
     message( STATUS "FOUND SDL: ${SDL_LIBRARY}")
+    message( STATUS "FOUND SDL LIBRARIES: ${SDL_LIBRARIES}")
 else ()
     message( FATAL_ERROR "Could not find SDL" )
 endif ()
@@ -48,15 +49,13 @@ endif ()
 
 
 add_executable( Vertex3D src/main.cpp
+        ${IMGUI_SRC}
         src/bin/cpp/engine/vk/Vulkan.cpp
         src/bin/cpp/engine/vk/Vulkan.h
-        ${IMGUI_SRC}
-        src/bin/cpp/engine/vk/Renderer.cpp
-        src/bin/cpp/engine/vk/Renderer.h
-        src/bin/cpp/engine/vk/Pipeline.cpp
-        src/bin/cpp/engine/vk/Pipeline.h
-        src/bin/cpp/engine/vk/VulkanDevice.cpp
-        src/bin/cpp/engine/vk/VulkanDevice.hpp
+        src/bin/cpp/engine/sdl/SDLWindow.cpp
+        src/bin/cpp/engine/sdl/SDLWindow.h
+        src/bin/cpp/engine/vk/vkObjects/VulkanInstance.cpp
+        src/bin/cpp/engine/vk/vkObjects/VulkanInstance.h
 )
 target_link_libraries(
         Vertex3D
@@ -64,5 +63,6 @@ target_link_libraries(
         SDL::SDL
         ${VULKAN_LIBRARIES}
         ${SDL_LIBRARY}
+        ${SDL_LIBRARIES}
         ${IMGUI_LIBRARIES}
 )

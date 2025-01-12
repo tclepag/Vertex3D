@@ -9,9 +9,9 @@
 int main() {
     // Setup Window
     auto* vulkan = new Vertex3D::Vulkan();
-    vulkan->Window();
+    vulkan->InitSDL();
 
-    SDL_Delay(100);
+    SDL_Delay(900);
 
     return 0;
 }
