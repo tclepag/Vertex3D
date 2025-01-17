@@ -47,77 +47,112 @@ cmake_ninja_workdir = C$:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/
 #############################################
 # Order-only phony target for Vertex3D
 
-build cmake_object_order_depends_target_Vertex3D: phony || .
+build cmake_object_order_depends_target_Vertex3D: phony || cmake_object_order_depends_target_glad cmake_object_order_depends_target_glm
 
 build CMakeFiles/Vertex3D.dir/src/main.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/main.cpp || cmake_object_order_depends_target_Vertex3D
   DEP_FILE = CMakeFiles\Vertex3D.dir\src\main.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -isystem C:/SDL/include -isystem C:/VulkanSDK/1.3.296.0/Include
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
   OBJECT_DIR = CMakeFiles\Vertex3D.dir
   OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src
 
-build CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_impl_vulkan.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/include/imgui/imgui_impl_vulkan.cpp || cmake_object_order_depends_target_Vertex3D
-  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\include\imgui\imgui_impl_vulkan.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -isystem C:/SDL/include -isystem C:/VulkanSDK/1.3.296.0/Include
-  OBJECT_DIR = CMakeFiles\Vertex3D.dir
-  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\include\imgui
-
 build CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/include/imgui/imgui.cpp || cmake_object_order_depends_target_Vertex3D
   DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\include\imgui\imgui.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -isystem C:/SDL/include -isystem C:/VulkanSDK/1.3.296.0/Include
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
   OBJECT_DIR = CMakeFiles\Vertex3D.dir
   OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\include\imgui
 
 build CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_draw.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/include/imgui/imgui_draw.cpp || cmake_object_order_depends_target_Vertex3D
   DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\include\imgui\imgui_draw.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -isystem C:/SDL/include -isystem C:/VulkanSDK/1.3.296.0/Include
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
   OBJECT_DIR = CMakeFiles\Vertex3D.dir
   OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\include\imgui
 
 build CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_tables.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/include/imgui/imgui_tables.cpp || cmake_object_order_depends_target_Vertex3D
   DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\include\imgui\imgui_tables.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -isystem C:/SDL/include -isystem C:/VulkanSDK/1.3.296.0/Include
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
   OBJECT_DIR = CMakeFiles\Vertex3D.dir
   OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\include\imgui
 
 build CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_widgets.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/include/imgui/imgui_widgets.cpp || cmake_object_order_depends_target_Vertex3D
   DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\include\imgui\imgui_widgets.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -isystem C:/SDL/include -isystem C:/VulkanSDK/1.3.296.0/Include
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
   OBJECT_DIR = CMakeFiles\Vertex3D.dir
   OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\include\imgui
 
 build CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_demo.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/include/imgui/imgui_demo.cpp || cmake_object_order_depends_target_Vertex3D
   DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\include\imgui\imgui_demo.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -isystem C:/SDL/include -isystem C:/VulkanSDK/1.3.296.0/Include
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
   OBJECT_DIR = CMakeFiles\Vertex3D.dir
   OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\include\imgui
 
-build CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/vk/Vulkan.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/cpp/engine/vk/Vulkan.cpp || cmake_object_order_depends_target_Vertex3D
-  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\vk\Vulkan.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -isystem C:/SDL/include -isystem C:/VulkanSDK/1.3.296.0/Include
+build CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_impl_opengl2.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/include/imgui/imgui_impl_opengl2.cpp || cmake_object_order_depends_target_Vertex3D
+  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\include\imgui\imgui_impl_opengl2.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
   OBJECT_DIR = CMakeFiles\Vertex3D.dir
-  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\vk
+  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\include\imgui
+
+build CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_impl_opengl3.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/include/imgui/imgui_impl_opengl3.cpp || cmake_object_order_depends_target_Vertex3D
+  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\include\imgui\imgui_impl_opengl3.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
+  OBJECT_DIR = CMakeFiles\Vertex3D.dir
+  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\include\imgui
+
+build CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/gfx/Shader.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/cpp/engine/gfx/Shader.cpp || cmake_object_order_depends_target_Vertex3D
+  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\gfx\Shader.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
+  OBJECT_DIR = CMakeFiles\Vertex3D.dir
+  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\gfx
+
+build CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/gfx/include/VAO.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/cpp/engine/gfx/include/VAO.cpp || cmake_object_order_depends_target_Vertex3D
+  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\gfx\include\VAO.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
+  OBJECT_DIR = CMakeFiles\Vertex3D.dir
+  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\gfx\include
+
+build CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/gfx/include/VBO.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/cpp/engine/gfx/include/VBO.cpp || cmake_object_order_depends_target_Vertex3D
+  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\gfx\include\VBO.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
+  OBJECT_DIR = CMakeFiles\Vertex3D.dir
+  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\gfx\include
+
+build CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/gfx/include/EBO.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/cpp/engine/gfx/include/EBO.cpp || cmake_object_order_depends_target_Vertex3D
+  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\gfx\include\EBO.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
+  OBJECT_DIR = CMakeFiles\Vertex3D.dir
+  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\gfx\include
+
+build CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/opgl/OpenGLH.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/cpp/engine/opgl/OpenGLH.cpp || cmake_object_order_depends_target_Vertex3D
+  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\opgl\OpenGLH.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
+  OBJECT_DIR = CMakeFiles\Vertex3D.dir
+  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\opgl
 
 build CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/sdl/SDLWindow.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/cpp/engine/sdl/SDLWindow.cpp || cmake_object_order_depends_target_Vertex3D
   DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\sdl\SDLWindow.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -isystem C:/SDL/include -isystem C:/VulkanSDK/1.3.296.0/Include
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
   OBJECT_DIR = CMakeFiles\Vertex3D.dir
   OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\sdl
 
-build CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/vk/vkObjects/VulkanInstance.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/cpp/engine/vk/vkObjects/VulkanInstance.cpp || cmake_object_order_depends_target_Vertex3D
-  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\vk\vkObjects\VulkanInstance.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -isystem C:/SDL/include -isystem C:/VulkanSDK/1.3.296.0/Include
+build CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/gfx/Renderer.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/cpp/engine/gfx/Renderer.cpp || cmake_object_order_depends_target_Vertex3D
+  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\gfx\Renderer.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
   OBJECT_DIR = CMakeFiles\Vertex3D.dir
-  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\vk\vkObjects
+  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\gfx
 
 
 # =============================================================================
@@ -127,10 +162,10 @@ build CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/vk/vkObjects/VulkanInstance.cpp
 #############################################
 # Link the executable Vertex3D.exe
 
-build Vertex3D.exe: CXX_EXECUTABLE_LINKER__Vertex3D_Debug CMakeFiles/Vertex3D.dir/src/main.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_impl_vulkan.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_draw.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_tables.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_widgets.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_demo.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/vk/Vulkan.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/sdl/SDLWindow.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/vk/vkObjects/VulkanInstance.cpp.obj | C$:/VulkanSDK/1.3.296.0/Lib/vulkan-1.lib C$:/SDL/lib/SDL3.lib C$:/SDL/lib/SDL3_image.lib C$:/SDL/lib/SDL3.lib C$:/SDL/lib/SDL3_image.lib
+build Vertex3D.exe: CXX_EXECUTABLE_LINKER__Vertex3D_Debug CMakeFiles/Vertex3D.dir/src/main.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_draw.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_tables.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_widgets.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_demo.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_impl_opengl2.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_impl_opengl3.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/gfx/Shader.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/gfx/include/VAO.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/gfx/include/VBO.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/gfx/include/EBO.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/opgl/OpenGLH.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/sdl/SDLWindow.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/gfx/Renderer.cpp.obj | _deps/glad-build/libglad.a _deps/glm-build/glm/libglm.a C$:/SDL/lib/SDL3.lib C$:/SDL/lib/SDL3_image.lib C$:/SDL/lib/SDL3.lib C$:/SDL/lib/SDL3_image.lib C$:/SDL/lib/SDL3.lib C$:/SDL/lib/SDL3_image.lib || _deps/glad-build/libglad.a _deps/glm-build/glm/libglm.a
   FLAGS = -g
-  LINK_LIBRARIES = C:/VulkanSDK/1.3.296.0/Lib/vulkan-1.lib  C:/SDL/lib/SDL3.lib  C:/SDL/lib/SDL3_image.lib  C:/SDL/lib/SDL3.lib  C:/SDL/lib/SDL3_image.lib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  LINK_PATH = -LC:/SDL/lib/SDL3.lib   -LC:/SDL/lib/SDL3_image.lib   -LC:/VulkanSDK/1.3.296.0/Lib/vulkan-1.lib
+  LINK_LIBRARIES = -lopengl32  -lglu32  _deps/glad-build/libglad.a  _deps/glm-build/glm/libglm.a  C:/SDL/lib/SDL3.lib  C:/SDL/lib/SDL3_image.lib  C:/SDL/lib/SDL3.lib  C:/SDL/lib/SDL3_image.lib  -lopengl32  -lglu32  C:/SDL/lib/SDL3.lib  C:/SDL/lib/SDL3_image.lib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_PATH = -LC:/SDL/lib/SDL3.lib   -LC:/SDL/lib/SDL3_image.lib   -LC:/Users/lepag/CLionProjects/Vertex3D/opengl32   -LC:/Users/lepag/CLionProjects/Vertex3D/glu32
   OBJECT_DIR = CMakeFiles\Vertex3D.dir
   POST_BUILD = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\lepag\CLionProjects\Vertex3D\cmake-build-debug && C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/lepag/.vcpkg-clion/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/Vertex3D.exe -installedDir C:/Users/lepag/.vcpkg-clion/vcpkg/installed/x64-windows/debug/bin -OutVariable out"
   PRE_LINK = cd .
@@ -162,9 +197,188 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/lepag/CLionProjects/Vertex3D/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for glad-generate-files
+
+build _deps/glad-build/glad-generate-files: phony _deps/glad-build/CMakeFiles/glad-generate-files _deps/glad-build/include/glad/glad.h _deps/glad-build/src/glad.c
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target glad
+
+
+#############################################
+# Order-only phony target for glad
+
+build cmake_object_order_depends_target_glad: phony || _deps/glad-build/glad-generate-files _deps/glad-build/include/glad/glad.h _deps/glad-build/src/glad.c
+
+build _deps/glad-build/CMakeFiles/glad.dir/src/glad.c.obj: C_COMPILER__glad_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/src/glad.c || cmake_object_order_depends_target_glad
+  DEP_FILE = _deps\glad-build\CMakeFiles\glad.dir\src\glad.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include
+  OBJECT_DIR = _deps\glad-build\CMakeFiles\glad.dir
+  OBJECT_FILE_DIR = _deps\glad-build\CMakeFiles\glad.dir\src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target glad
+
+
+#############################################
+# Link the static library _deps\glad-build\libglad.a
+
+build _deps/glad-build/libglad.a: C_STATIC_LIBRARY_LINKER__glad_Debug _deps/glad-build/CMakeFiles/glad.dir/src/glad.c.obj || _deps/glad-build/glad-generate-files
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = _deps\glad-build\CMakeFiles\glad.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = _deps\glad-build\libglad.a
+  TARGET_PDB = glad.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/glad-build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\lepag\CLionProjects\Vertex3D\cmake-build-debug\_deps\glad-build && "C:\Program Files\JetBrains\CLion 2024.3.1.1\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps/glad-build/edit_cache: phony _deps/glad-build/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/glad-build/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\lepag\CLionProjects\Vertex3D\cmake-build-debug\_deps\glad-build && "C:\Program Files\JetBrains\CLion 2024.3.1.1\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\lepag\CLionProjects\Vertex3D -BC:\Users\lepag\CLionProjects\Vertex3D\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/glad-build/rebuild_cache: phony _deps/glad-build/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Phony custom command for _deps\glad-build\CMakeFiles\glad-generate-files
+
+build _deps/glad-build/CMakeFiles/glad-generate-files | ${cmake_ninja_workdir}_deps/glad-build/CMakeFiles/glad-generate-files: phony _deps/glad-build/include/glad/glad.h _deps/glad-build/src/glad.c
+
+
+#############################################
+# Custom command for _deps\glad-build\include\glad\glad.h
+
+build _deps/glad-build/include/glad/glad.h _deps/glad-build/src/glad.c | ${cmake_ninja_workdir}_deps/glad-build/include/glad/glad.h ${cmake_ninja_workdir}_deps/glad-build/src/glad.c: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\lepag\CLionProjects\Vertex3D\cmake-build-debug\_deps\glad-src && "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.496.0_x64__qbz5n2kfra8p0\python3.13.exe" -m glad --profile=compatibility --out-path=C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build --api= --generator=c --extensions= --spec=gl"
+  DESC = Generating GLAD
+  restat = 1
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/lepag/CLionProjects/Vertex3D/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/glm-build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\lepag\CLionProjects\Vertex3D\cmake-build-debug\_deps\glm-build && "C:\Program Files\JetBrains\CLion 2024.3.1.1\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps/glm-build/edit_cache: phony _deps/glm-build/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/glm-build/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\lepag\CLionProjects\Vertex3D\cmake-build-debug\_deps\glm-build && "C:\Program Files\JetBrains\CLion 2024.3.1.1\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\lepag\CLionProjects\Vertex3D -BC:\Users\lepag\CLionProjects\Vertex3D\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/glm-build/rebuild_cache: phony _deps/glm-build/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target glm
+
+
+#############################################
+# Order-only phony target for glm
+
+build cmake_object_order_depends_target_glm: phony || .
+
+build _deps/glm-build/glm/CMakeFiles/glm.dir/detail/glm.cpp.obj: CXX_COMPILER__glm_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src/glm/detail/glm.cpp || cmake_object_order_depends_target_glm
+  DEP_FILE = _deps\glm-build\glm\CMakeFiles\glm.dir\detail\glm.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src
+  OBJECT_DIR = _deps\glm-build\glm\CMakeFiles\glm.dir
+  OBJECT_FILE_DIR = _deps\glm-build\glm\CMakeFiles\glm.dir\detail
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target glm
+
+
+#############################################
+# Link the static library _deps\glm-build\glm\libglm.a
+
+build _deps/glm-build/glm/libglm.a: CXX_STATIC_LIBRARY_LINKER__glm_Debug _deps/glm-build/glm/CMakeFiles/glm.dir/detail/glm.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = _deps\glm-build\glm\CMakeFiles\glm.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = _deps\glm-build\glm\libglm.a
+  TARGET_PDB = glm.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/glm-build/glm/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\lepag\CLionProjects\Vertex3D\cmake-build-debug\_deps\glm-build\glm && "C:\Program Files\JetBrains\CLion 2024.3.1.1\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps/glm-build/glm/edit_cache: phony _deps/glm-build/glm/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/glm-build/glm/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\lepag\CLionProjects\Vertex3D\cmake-build-debug\_deps\glm-build\glm && "C:\Program Files\JetBrains\CLion 2024.3.1.1\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\lepag\CLionProjects\Vertex3D -BC:\Users\lepag\CLionProjects\Vertex3D\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/glm-build/glm/rebuild_cache: phony _deps/glm-build/glm/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
 
 build Vertex3D: phony Vertex3D.exe
+
+build glad: phony _deps/glad-build/libglad.a
+
+build glad-generate-files: phony _deps/glad-build/glad-generate-files
+
+build glm: phony _deps/glm-build/glm/libglm.a
+
+build libglad.a: phony _deps/glad-build/libglad.a
+
+build libglm.a: phony _deps/glm-build/glm/libglm.a
 
 # =============================================================================
 # Folder targets.
@@ -174,7 +388,28 @@ build Vertex3D: phony Vertex3D.exe
 #############################################
 # Folder: C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug
 
-build all: phony Vertex3D.exe
+build all: phony Vertex3D.exe _deps/glad-build/all _deps/glm-build/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build
+
+build _deps/glad-build/all: phony _deps/glad-build/libglad.a
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-build
+
+build _deps/glm-build/all: phony _deps/glm-build/glm/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-build/glm
+
+build _deps/glm-build/glm/all: phony _deps/glm-build/glm/libglm.a
 
 # =============================================================================
 # Built-in targets
@@ -183,14 +418,14 @@ build all: phony Vertex3D.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFile.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckLibraryExists.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/FindSDL.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/FindThreads.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/FindVulkan.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake C$:/Users/lepag/.vcpkg-clion/vcpkg/scripts/buildsystems/vcpkg.cmake C$:/Users/lepag/CLionProjects/Vertex3D/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeRCCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFile.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckLibraryExists.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/ExternalProject/PatchInfo.txt.in C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/ExternalProject/RepositoryInfo.txt.in C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/ExternalProject/UpdateInfo.txt.in C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/ExternalProject/gitclone.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/ExternalProject/gitupdate.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/ExternalProject/shared_internal_commands.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/ExternalProject/stepscript.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/FetchContent.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/FindGit.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/FindOpenGL.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/FindPython.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/FindPython/Support.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/FindSDL.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/FindThreads.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake C$:/Users/lepag/.vcpkg-clion/vcpkg/scripts/buildsystems/vcpkg.cmake C$:/Users/lepag/CLionProjects/Vertex3D/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeRCCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake _deps/glad-src/CMakeLists.txt _deps/glm-src/CMakeLists.txt _deps/glm-src/glm/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFile.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckLibraryExists.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/FindSDL.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/FindThreads.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/FindVulkan.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake C$:/Users/lepag/.vcpkg-clion/vcpkg/scripts/buildsystems/vcpkg.cmake C$:/Users/lepag/CLionProjects/Vertex3D/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeRCCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake: phony
+build C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFile.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckLibraryExists.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/ExternalProject/PatchInfo.txt.in C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/ExternalProject/RepositoryInfo.txt.in C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/ExternalProject/UpdateInfo.txt.in C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/ExternalProject/gitclone.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/ExternalProject/gitupdate.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/ExternalProject/shared_internal_commands.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/ExternalProject/stepscript.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/FetchContent.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/FindGit.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/FindOpenGL.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/FindPython.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/FindPython/Support.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/FindSDL.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/FindThreads.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake C$:/Users/lepag/.vcpkg-clion/vcpkg/scripts/buildsystems/vcpkg.cmake C$:/Users/lepag/CLionProjects/Vertex3D/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeRCCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake _deps/glad-src/CMakeLists.txt _deps/glm-src/CMakeLists.txt _deps/glm-src/glm/CMakeLists.txt: phony
 
 
 #############################################

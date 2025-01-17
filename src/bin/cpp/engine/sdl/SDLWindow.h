@@ -5,25 +5,30 @@
 #ifndef SDLWINDOW_H
 #define SDLWINDOW_H
 #include <SDL3/SDL.h>
-#include <vulkan/vulkan_core.h>
 #include <SDL3/SDL_image.h>
+#include <iostream>
+
+#include "../opgl/OpenGLH.h"
 
 namespace Vertex3D {
+    class OpenGLH;
 
-class SDLWindow {
+    class SDLWindow {
 public:
     int width = 800;
     int height = 600;
+    OpenGLH* handler;
+    SDL_GLContext context;
     SDL_Window* window;
     SDL_Renderer* renderer;
 
     SDLWindow();
-    void CreateWindow(const char* title, const char* iconPath, int w, int h, SDL_WindowFlags flags);
+    void SetupWindow(const char* title, const char* iconPath, int w, int h, SDL_WindowFlags flags);
 
     void Run();
     void CallDraw();
     void CallResize(int w, int h);
-    ~SDLWindow();
+    void Cleanup();
 private:
     bool _ready = false;
     bool _running = false;

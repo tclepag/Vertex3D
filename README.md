@@ -9,4 +9,3 @@ If you stumbled across this or wanted to test out what this engine can do, thank
 
 ### Third Party Sources
 * <a href="https://github.com/libsdl-org/SDL">Simple DirectMedia Layer 3.0</a> (Uses <a href="https://github.com/mmozeiko/build-sdl3">build-sdl3</a> for prebuilt libraries)
-* <a href="https://vulkan.lunarg.com/">Vulkan SDK</a> (Uses <a href="https://vulkan.lunarg.com/sdk/home#windows">Vulkan Windows Build</a>)

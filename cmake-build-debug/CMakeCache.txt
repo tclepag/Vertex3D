@@ -173,7 +173,7 @@ CMAKE_INSTALL_SYSCONFDIR:PATH=etc
 CMAKE_LINKER:FILEPATH=C:/Program Files/JetBrains/CLion 2024.3.1.1/bin/mingw/bin/ld.exe
 
 //make program
-CMAKE_MAKE_PROGRAM:FILEPATH=C:/Program Files/JetBrains/CLion 2024.3.1.1/bin/ninja/win/x64/ninja.exe
+CMAKE_MAKE_PROGRAM:FILEPATH=C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/ninja/win/x64/ninja.exe
 
 //Flags used by the linker during the creation of modules during
 // all build types.
@@ -513,6 +513,9 @@ GLM_ENABLE_SIMD_SSSE3:BOOL=OFF
 
 //Force 'pure' instructions
 GLM_FORCE_PURE:BOOL=OFF
+
+//Enable ARM NEON optimizations
+GLM_TEST_ENABLE_SIMD_NEON:BOOL=OFF
 
 //Path to a file.
 GLUT_INCLUDE_DIR:PATH=GLUT_INCLUDE_DIR-NOTFOUND
@@ -1047,7 +1050,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -1551,7 +1554,7 @@ _Python_EXECUTABLE:INTERNAL=C:/Program Files/WindowsApps/PythonSoftwareFoundatio
 _Python_EXECUTABLE_DEBUG:INTERNAL=_Python_EXECUTABLE_DEBUG-NOTFOUND
 //Python Properties
 _Python_INTERPRETER_PROPERTIES:INTERNAL=Python;3;13;1;64;32;<none>;cp313-win_amd64;;C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.496.0_x64__qbz5n2kfra8p0\Lib;C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.496.0_x64__qbz5n2kfra8p0\Lib;C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.496.0_x64__qbz5n2kfra8p0\Lib\site-packages;C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.496.0_x64__qbz5n2kfra8p0\Lib\site-packages
-_Python_INTERPRETER_SIGNATURE:INTERNAL=b3f324bff2894600653534295afc621b
+_Python_INTERPRETER_SIGNATURE:INTERNAL=78f6f06c741b4732c8c0c23d77d9a42f
 //NumPy reason failure
 _Python_NumPy_REASON_FAILURE:INTERNAL=
 

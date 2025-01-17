@@ -1,7 +1,17 @@
 "C:\Program Files\JetBrains\CLion 2024.3.1.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2024.3.1.1/bin/ninja/win/x64/ninja.exe" -DCMAKE_TOOLCHAIN_FILE=C:\Users\lepag\.vcpkg-clion\vcpkg\scripts\buildsystems\vcpkg.cmake -G Ninja -S C:\Users\lepag\CLionProjects\Vertex3D -B C:\Users\lepag\CLionProjects\Vertex3D\cmake-build-debug
+CMake Deprecation Warning at cmake-build-debug/_deps/glad-src/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- GLM: Version 1.0.2
+-- GLM: Build with C++ features auto detection
 -- FOUND SDL: C:/SDL/lib/SDL3.lib;C:/SDL/lib/SDL3_image.lib
 -- FOUND SDL LIBRARIES: C:/SDL/lib/SDL3.lib;C:/SDL/lib/SDL3_image.lib
--- Found Vulkan: C:/VulkanSDK/1.3.296.0/Lib/vulkan-1.lib
--- Configuring done (0.2s)
--- Generating done (0.0s)
+-- Found OpenGL: opengl32;glu32
+-- Configuring done (2.9s)
+-- Generating done (0.2s)
 -- Build files have been written to: C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug
