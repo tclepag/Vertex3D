@@ -43,6 +43,8 @@ set(ENGINE_SRC
         src/bin/cpp/engine/sdl/SDLWindow.h
         src/bin/cpp/engine/gfx/Renderer.cpp
         src/bin/cpp/engine/gfx/Renderer.h
+        src/bin/cpp/engine/util/Signals/ISignal.h
+        src/bin/cpp/engine/util/Signals/ISignalSubscription.h
 )
 
 # Glad Packages
