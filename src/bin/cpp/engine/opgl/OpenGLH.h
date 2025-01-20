@@ -4,9 +4,12 @@
 
 #ifndef OPENGLH_H
 #define OPENGLH_H
+
+#include <glad/glad.h>
 #include <iostream>
 #include <SDL3/SDL.h>
 #include "../sdl/SDLWindow.h"
+#include "../util/signals/VSignal.h"
 
 namespace Vertex3D {
     class SDLWindow;
@@ -17,16 +20,12 @@ public:
     SDLWindow* window;
 
     // Public Signals
-    // TODO: CREATE A SIGNAL CLASS!!!
 
     // Constructor
     OpenGLH();
 
     // Public Functions
-    void Setup();
-    void SetupWindow();
     void Update(SDL_Event* event);
-
 
     // Deconstructor
     ~OpenGLH();

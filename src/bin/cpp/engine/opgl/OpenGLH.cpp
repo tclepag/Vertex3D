@@ -7,29 +7,15 @@
 #include <glad/glad.h>
 #include <GL/gl.h>
 
+#include "../util/debug/Debug.h"
+
 namespace Vertex3D {
     OpenGLH::OpenGLH() {
-        this->_active = true;
-
-        // Setup class stuff ...
-
-        // Begin processing
-        this->Setup();
-    }
-
-    void OpenGLH::Setup() {
-        this->SetupWindow();
-    }
-
-    void OpenGLH::SetupWindow() {
-        auto *wnd = new SDLWindow();
-        wnd->SetupWindow("Vertex3D", "src/bin/materials/tex/app/app.png", 800, 600, SDL_WINDOW_OPENGL | SDL_WINDOW_RESIZABLE);
         if (!gladLoadGLLoader((GLADloadproc)SDL_GL_GetProcAddress))
         {
             throw std::runtime_error("Failed to load OpenGL functions");
         }
-        wnd->Run();
-        this->window = wnd;
+        this->_active = true;
     }
 
     void OpenGLH::Update(SDL_Event* event) {

@@ -51,108 +51,122 @@ build cmake_object_order_depends_target_Vertex3D: phony || cmake_object_order_de
 
 build CMakeFiles/Vertex3D.dir/src/main.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/main.cpp || cmake_object_order_depends_target_Vertex3D
   DEP_FILE = CMakeFiles\Vertex3D.dir\src\main.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  FLAGS = -pthread -g -std=gnu++23 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
   OBJECT_DIR = CMakeFiles\Vertex3D.dir
   OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src
 
-build CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/include/imgui/imgui.cpp || cmake_object_order_depends_target_Vertex3D
-  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\include\imgui\imgui.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+build CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/main/Screen.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/cpp/engine/main/Screen.cpp || cmake_object_order_depends_target_Vertex3D
+  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\main\Screen.cpp.obj.d
+  FLAGS = -pthread -g -std=gnu++23 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
   OBJECT_DIR = CMakeFiles\Vertex3D.dir
-  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\include\imgui
-
-build CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_draw.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/include/imgui/imgui_draw.cpp || cmake_object_order_depends_target_Vertex3D
-  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\include\imgui\imgui_draw.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
-  OBJECT_DIR = CMakeFiles\Vertex3D.dir
-  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\include\imgui
-
-build CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_tables.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/include/imgui/imgui_tables.cpp || cmake_object_order_depends_target_Vertex3D
-  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\include\imgui\imgui_tables.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
-  OBJECT_DIR = CMakeFiles\Vertex3D.dir
-  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\include\imgui
-
-build CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_widgets.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/include/imgui/imgui_widgets.cpp || cmake_object_order_depends_target_Vertex3D
-  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\include\imgui\imgui_widgets.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
-  OBJECT_DIR = CMakeFiles\Vertex3D.dir
-  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\include\imgui
-
-build CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_demo.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/include/imgui/imgui_demo.cpp || cmake_object_order_depends_target_Vertex3D
-  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\include\imgui\imgui_demo.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
-  OBJECT_DIR = CMakeFiles\Vertex3D.dir
-  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\include\imgui
-
-build CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_impl_opengl2.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/include/imgui/imgui_impl_opengl2.cpp || cmake_object_order_depends_target_Vertex3D
-  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\include\imgui\imgui_impl_opengl2.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
-  OBJECT_DIR = CMakeFiles\Vertex3D.dir
-  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\include\imgui
-
-build CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_impl_opengl3.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/include/imgui/imgui_impl_opengl3.cpp || cmake_object_order_depends_target_Vertex3D
-  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\include\imgui\imgui_impl_opengl3.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
-  OBJECT_DIR = CMakeFiles\Vertex3D.dir
-  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\include\imgui
-
-build CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/gfx/Shader.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/cpp/engine/gfx/Shader.cpp || cmake_object_order_depends_target_Vertex3D
-  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\gfx\Shader.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
-  OBJECT_DIR = CMakeFiles\Vertex3D.dir
-  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\gfx
-
-build CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/gfx/include/VAO.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/cpp/engine/gfx/include/VAO.cpp || cmake_object_order_depends_target_Vertex3D
-  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\gfx\include\VAO.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
-  OBJECT_DIR = CMakeFiles\Vertex3D.dir
-  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\gfx\include
-
-build CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/gfx/include/VBO.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/cpp/engine/gfx/include/VBO.cpp || cmake_object_order_depends_target_Vertex3D
-  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\gfx\include\VBO.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
-  OBJECT_DIR = CMakeFiles\Vertex3D.dir
-  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\gfx\include
-
-build CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/gfx/include/EBO.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/cpp/engine/gfx/include/EBO.cpp || cmake_object_order_depends_target_Vertex3D
-  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\gfx\include\EBO.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
-  OBJECT_DIR = CMakeFiles\Vertex3D.dir
-  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\gfx\include
+  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\main
 
 build CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/opgl/OpenGLH.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/cpp/engine/opgl/OpenGLH.cpp || cmake_object_order_depends_target_Vertex3D
   DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\opgl\OpenGLH.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  FLAGS = -pthread -g -std=gnu++23 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
   OBJECT_DIR = CMakeFiles\Vertex3D.dir
   OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\opgl
 
 build CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/sdl/SDLWindow.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/cpp/engine/sdl/SDLWindow.cpp || cmake_object_order_depends_target_Vertex3D
   DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\sdl\SDLWindow.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  FLAGS = -pthread -g -std=gnu++23 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
   OBJECT_DIR = CMakeFiles\Vertex3D.dir
   OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\sdl
 
 build CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/gfx/Renderer.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/cpp/engine/gfx/Renderer.cpp || cmake_object_order_depends_target_Vertex3D
   DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\gfx\Renderer.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  FLAGS = -pthread -g -std=gnu++23 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
   OBJECT_DIR = CMakeFiles\Vertex3D.dir
   OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\gfx
+
+build CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/util/debug/Debug.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/cpp/engine/util/debug/Debug.cpp || cmake_object_order_depends_target_Vertex3D
+  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\util\debug\Debug.cpp.obj.d
+  FLAGS = -pthread -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
+  OBJECT_DIR = CMakeFiles\Vertex3D.dir
+  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\util\debug
+
+build CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/gfx/Shader.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/cpp/engine/gfx/Shader.cpp || cmake_object_order_depends_target_Vertex3D
+  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\gfx\Shader.cpp.obj.d
+  FLAGS = -pthread -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
+  OBJECT_DIR = CMakeFiles\Vertex3D.dir
+  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\gfx
+
+build CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/gfx/include/VAO.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/cpp/engine/gfx/include/VAO.cpp || cmake_object_order_depends_target_Vertex3D
+  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\gfx\include\VAO.cpp.obj.d
+  FLAGS = -pthread -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
+  OBJECT_DIR = CMakeFiles\Vertex3D.dir
+  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\gfx\include
+
+build CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/gfx/include/VBO.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/cpp/engine/gfx/include/VBO.cpp || cmake_object_order_depends_target_Vertex3D
+  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\gfx\include\VBO.cpp.obj.d
+  FLAGS = -pthread -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
+  OBJECT_DIR = CMakeFiles\Vertex3D.dir
+  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\gfx\include
+
+build CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/gfx/include/EBO.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/cpp/engine/gfx/include/EBO.cpp || cmake_object_order_depends_target_Vertex3D
+  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\gfx\include\EBO.cpp.obj.d
+  FLAGS = -pthread -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
+  OBJECT_DIR = CMakeFiles\Vertex3D.dir
+  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\cpp\engine\gfx\include
+
+build CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/include/imgui/imgui.cpp || cmake_object_order_depends_target_Vertex3D
+  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\include\imgui\imgui.cpp.obj.d
+  FLAGS = -pthread -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
+  OBJECT_DIR = CMakeFiles\Vertex3D.dir
+  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\include\imgui
+
+build CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_draw.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/include/imgui/imgui_draw.cpp || cmake_object_order_depends_target_Vertex3D
+  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\include\imgui\imgui_draw.cpp.obj.d
+  FLAGS = -pthread -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
+  OBJECT_DIR = CMakeFiles\Vertex3D.dir
+  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\include\imgui
+
+build CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_tables.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/include/imgui/imgui_tables.cpp || cmake_object_order_depends_target_Vertex3D
+  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\include\imgui\imgui_tables.cpp.obj.d
+  FLAGS = -pthread -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
+  OBJECT_DIR = CMakeFiles\Vertex3D.dir
+  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\include\imgui
+
+build CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_widgets.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/include/imgui/imgui_widgets.cpp || cmake_object_order_depends_target_Vertex3D
+  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\include\imgui\imgui_widgets.cpp.obj.d
+  FLAGS = -pthread -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
+  OBJECT_DIR = CMakeFiles\Vertex3D.dir
+  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\include\imgui
+
+build CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_demo.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/include/imgui/imgui_demo.cpp || cmake_object_order_depends_target_Vertex3D
+  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\include\imgui\imgui_demo.cpp.obj.d
+  FLAGS = -pthread -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
+  OBJECT_DIR = CMakeFiles\Vertex3D.dir
+  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\include\imgui
+
+build CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_impl_opengl2.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/include/imgui/imgui_impl_opengl2.cpp || cmake_object_order_depends_target_Vertex3D
+  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\include\imgui\imgui_impl_opengl2.cpp.obj.d
+  FLAGS = -pthread -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
+  OBJECT_DIR = CMakeFiles\Vertex3D.dir
+  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\include\imgui
+
+build CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_impl_opengl3.cpp.obj: CXX_COMPILER__Vertex3D_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/src/bin/include/imgui/imgui_impl_opengl3.cpp || cmake_object_order_depends_target_Vertex3D
+  DEP_FILE = CMakeFiles\Vertex3D.dir\src\bin\include\imgui\imgui_impl_opengl3.cpp.obj.d
+  FLAGS = -pthread -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/include -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src -isystem C:/SDL/include
+  OBJECT_DIR = CMakeFiles\Vertex3D.dir
+  OBJECT_FILE_DIR = CMakeFiles\Vertex3D.dir\src\bin\include\imgui
 
 
 # =============================================================================
@@ -162,8 +176,8 @@ build CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/gfx/Renderer.cpp.obj: CXX_COMPI
 #############################################
 # Link the executable Vertex3D.exe
 
-build Vertex3D.exe: CXX_EXECUTABLE_LINKER__Vertex3D_Debug CMakeFiles/Vertex3D.dir/src/main.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_draw.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_tables.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_widgets.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_demo.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_impl_opengl2.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_impl_opengl3.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/gfx/Shader.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/gfx/include/VAO.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/gfx/include/VBO.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/gfx/include/EBO.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/opgl/OpenGLH.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/sdl/SDLWindow.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/gfx/Renderer.cpp.obj | _deps/glad-build/libglad.a _deps/glm-build/glm/libglm.a C$:/SDL/lib/SDL3.lib C$:/SDL/lib/SDL3_image.lib C$:/SDL/lib/SDL3.lib C$:/SDL/lib/SDL3_image.lib C$:/SDL/lib/SDL3.lib C$:/SDL/lib/SDL3_image.lib || _deps/glad-build/libglad.a _deps/glm-build/glm/libglm.a
-  FLAGS = -g
+build Vertex3D.exe: CXX_EXECUTABLE_LINKER__Vertex3D_Debug CMakeFiles/Vertex3D.dir/src/main.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/main/Screen.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/opgl/OpenGLH.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/sdl/SDLWindow.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/gfx/Renderer.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/util/debug/Debug.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/gfx/Shader.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/gfx/include/VAO.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/gfx/include/VBO.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/cpp/engine/gfx/include/EBO.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_draw.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_tables.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_widgets.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_demo.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_impl_opengl2.cpp.obj CMakeFiles/Vertex3D.dir/src/bin/include/imgui/imgui_impl_opengl3.cpp.obj | _deps/glad-build/libglad.a _deps/glm-build/glm/libglm.a C$:/SDL/lib/SDL3.lib C$:/SDL/lib/SDL3_image.lib C$:/SDL/lib/SDL3.lib C$:/SDL/lib/SDL3_image.lib C$:/SDL/lib/SDL3.lib C$:/SDL/lib/SDL3_image.lib || _deps/glad-build/libglad.a _deps/glm-build/glm/libglm.a
+  FLAGS = -pthread -g
   LINK_LIBRARIES = -lopengl32  -lglu32  _deps/glad-build/libglad.a  _deps/glm-build/glm/libglm.a  C:/SDL/lib/SDL3.lib  C:/SDL/lib/SDL3_image.lib  C:/SDL/lib/SDL3.lib  C:/SDL/lib/SDL3_image.lib  -lopengl32  -lglu32  C:/SDL/lib/SDL3.lib  C:/SDL/lib/SDL3_image.lib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   LINK_PATH = -LC:/SDL/lib/SDL3.lib   -LC:/SDL/lib/SDL3_image.lib   -LC:/Users/lepag/CLionProjects/Vertex3D/opengl32   -LC:/Users/lepag/CLionProjects/Vertex3D/glu32
   OBJECT_DIR = CMakeFiles\Vertex3D.dir
@@ -321,7 +335,7 @@ build cmake_object_order_depends_target_glm: phony || .
 
 build _deps/glm-build/glm/CMakeFiles/glm.dir/detail/glm.cpp.obj: CXX_COMPILER__glm_unscanned_Debug C$:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src/glm/detail/glm.cpp || cmake_object_order_depends_target_glm
   DEP_FILE = _deps\glm-build\glm\CMakeFiles\glm.dir\detail\glm.cpp.obj.d
-  FLAGS = -g -std=c++20 -fdiagnostics-color=always
+  FLAGS = -pthread -g -std=c++23 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-src
   OBJECT_DIR = _deps\glm-build\glm\CMakeFiles\glm.dir
   OBJECT_FILE_DIR = _deps\glm-build\glm\CMakeFiles\glm.dir\detail
@@ -335,7 +349,7 @@ build _deps/glm-build/glm/CMakeFiles/glm.dir/detail/glm.cpp.obj: CXX_COMPILER__g
 # Link the static library _deps\glm-build\glm\libglm.a
 
 build _deps/glm-build/glm/libglm.a: CXX_STATIC_LIBRARY_LINKER__glm_Debug _deps/glm-build/glm/CMakeFiles/glm.dir/detail/glm.cpp.obj
-  LANGUAGE_COMPILE_FLAGS = -g
+  LANGUAGE_COMPILE_FLAGS = -pthread -g
   OBJECT_DIR = _deps\glm-build\glm\CMakeFiles\glm.dir
   POST_BUILD = cd .
   PRE_LINK = cd .

@@ -3,7 +3,6 @@
 //
 
 #include "SDLWindow.h"
-#include <GL/gl.h>
 
 namespace Vertex3D {
     SDLWindow::SDLWindow() {
@@ -57,7 +56,7 @@ namespace Vertex3D {
         }
 
         // SDL No longer needs to process, exit the application
-        this->handler->~OpenGLH();
+        this->handler->~EngineCore();
     }
 
     // Runs every poll event, handles window
@@ -65,9 +64,6 @@ namespace Vertex3D {
         if (event.type == SDL_EVENT_WINDOW_RESIZED) {
             SDL_GetWindowSize(this->window, &this->width, &this->height);
         }
-        glViewport(0, 0, this->width, this->height);
-        glClearColor(0.9, 0.4, 0.6, 1);
-        glClear(GL_COLOR_BUFFER_BIT);
 
         SDL_GL_SwapWindow(this->window);
 

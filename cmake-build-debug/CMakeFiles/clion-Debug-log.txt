@@ -12,6 +12,6 @@ CMake Deprecation Warning at cmake-build-debug/_deps/glad-src/CMakeLists.txt:1 (
 -- FOUND SDL: C:/SDL/lib/SDL3.lib;C:/SDL/lib/SDL3_image.lib
 -- FOUND SDL LIBRARIES: C:/SDL/lib/SDL3.lib;C:/SDL/lib/SDL3_image.lib
 -- Found OpenGL: opengl32;glu32
--- Configuring done (1.3s)
--- Generating done (0.1s)
+-- Configuring done (4.0s)
+-- Generating done (0.4s)
 -- Build files have been written to: C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug

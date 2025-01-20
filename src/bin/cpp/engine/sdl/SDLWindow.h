@@ -4,20 +4,21 @@
 
 #ifndef SDLWINDOW_H
 #define SDLWINDOW_H
+
+
 #include <SDL3/SDL.h>
 #include <SDL3/SDL_image.h>
 #include <iostream>
 
-#include "../opgl/OpenGLH.h"
+#include "../main/EngineCore.h"
 
 namespace Vertex3D {
-    class OpenGLH;
-
+    class EngineCore;
     class SDLWindow {
 public:
     int width = 800;
     int height = 600;
-    OpenGLH* handler;
+    EngineCore* handler;
     SDL_GLContext context;
     SDL_Window* window;
     SDL_Renderer* renderer;

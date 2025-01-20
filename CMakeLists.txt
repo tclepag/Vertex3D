@@ -5,8 +5,9 @@ project(Vertex3D)
 
 include(FetchContent)
 
-set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_GENERATOR_PLATFORM "x86")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
 
 # ImGui Source
 set(IMGUI_SRC
@@ -37,14 +38,18 @@ set(GFX_SRC
 
 # Base Engine Sources
 set(ENGINE_SRC
+        src/bin/cpp/engine/main/EngineCore.cpp
+        src/bin/cpp/engine/main/EngineCore.h
         src/bin/cpp/engine/opgl/OpenGLH.cpp
         src/bin/cpp/engine/opgl/OpenGLH.h
         src/bin/cpp/engine/sdl/SDLWindow.cpp
         src/bin/cpp/engine/sdl/SDLWindow.h
         src/bin/cpp/engine/gfx/Renderer.cpp
         src/bin/cpp/engine/gfx/Renderer.h
-        src/bin/cpp/engine/util/Signals/ISignal.h
-        src/bin/cpp/engine/util/Signals/ISignalSubscription.h
+        src/bin/cpp/engine/util/Signals/VSignal.h
+        src/bin/cpp/engine/util/Signals/VSignalSubscription.h
+        src/bin/cpp/engine/util/debug/Debug.cpp
+        src/bin/cpp/engine/util/debug/Debug.h
 )
 
 # Glad Packages
@@ -87,9 +92,9 @@ endif ()
 
 
 add_executable( Vertex3D src/main.cpp
-        ${IMGUI_SRC}
-        ${GFX_SRC}
         ${ENGINE_SRC}
+        ${GFX_SRC}
+        ${IMGUI_SRC}
 )
 target_link_libraries(
         Vertex3D
