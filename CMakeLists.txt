@@ -8,21 +8,6 @@ include(FetchContent)
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
 
-# ImGui Source
-set(IMGUI_SRC
-
-)
-
-# GFX Source
-set(GFX_SRC
-
-)
-
-# Base Engine Sources
-set(ENGINE_SRC
-
-)
-
 # Glad Packages
 FetchContent_Declare(glad GIT_REPOSITORY https://github.com/Dav1dde/glad.git)
 FetchContent_MakeAvailable(glad)
@@ -61,6 +46,9 @@ else ()
     message( FATAL_ERROR "Could not find OpenGL" )
 endif ()
 
+
+add_subdirectory(src/scripts/source/engine)
+add_subdirectory(src/scripts/include/engine)
 
 add_executable( Vertex3D src/main.cpp
         ${ENGINE_SRC}

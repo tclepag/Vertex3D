@@ -17,7 +17,10 @@ namespace Vertex3D::Debug {
     // Debug Functions
 
     // Prints a Message to the Console
-    void log(const std::string& msg);
+    void log(const std::string& msg) {
+        std::cout << msg << std::endl;
+        console_logged.publish(msg);
+     };
 } // Vertex3D
 
 #endif //DEBUG_H

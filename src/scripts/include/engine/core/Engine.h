@@ -14,21 +14,21 @@ namespace Vertex3D {
     class SDLWindow;
     class OpenGLH;
 
-    class EngineCore {
+    class Engine {
     public:
       SDLWindow* window{};
       OpenGLH* gl{};
       Renderer* renderer{};
       bool running = true;
 
-      EngineCore();
+      Engine();
 
         void SetupWindow();
         void SetupOpenGL();
         void SetupRenderer();
         void Update(SDL_Event* event);
 
-      ~EngineCore();
+      ~Engine();
     private:
         bool update = true;
 };

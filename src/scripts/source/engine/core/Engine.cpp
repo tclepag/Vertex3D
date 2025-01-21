@@ -2,20 +2,20 @@
 // Created by lepag on 1/19/2025.
 //
 
-#include "EngineCore.h"
+#include "../src/scripts/include/engine/core/Engine.h"
 
 namespace Vertex3D {
-    EngineCore::EngineCore() {
+    Engine::EngineCore() {
         this->SetupWindow();
         this->SetupRenderer();
     }
 
-    void EngineCore::SetupRenderer() {
+    void Engine::SetupRenderer() {
         auto* renderer = new Renderer();
         this->renderer = renderer;
     }
 
-    void EngineCore::SetupWindow() {
+    void Engine::SetupWindow() {
         auto *wnd = new SDLWindow();
         wnd->handler = this;
 
@@ -24,7 +24,7 @@ namespace Vertex3D {
         this->window = wnd;
     }
 
-    void EngineCore::Update(SDL_Event* event) {
+    void Engine::Update(SDL_Event* event) {
         if (!this->update) {
             return;
         }
@@ -48,7 +48,7 @@ namespace Vertex3D {
         }
     }
 
-    EngineCore::~EngineCore() {
+    Engine::~Engine() {
         this->gl->~OpenGLH();
         this->window->~SDLWindow();
         this->running = false;

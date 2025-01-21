@@ -5,7 +5,7 @@
 #include "SDLWindow.h"
 
 namespace Vertex3D {
-    SDLWindow::SDLWindow() {
+    Window::SDLWindow() {
         if (SDL_Init(SDL_INIT_VIDEO) < 0) {
             std::cout << "SDL_Init Error: " << SDL_GetError() << std::endl;
             this->_running = false;
@@ -14,9 +14,9 @@ namespace Vertex3D {
         this->_ready = true;
     }
 
-    void SDLWindow::SetupWindow(const char *title, const char* iconPath, int w, int h, SDL_WindowFlags flags) {
+    void Window::SetupWindow(const char *title, const char* iconPath, int w, int h, SDL_WindowFlags flags) {
         if ( !this->_ready ) {
-            std::cout << "SDLWindow::CreateWindow() Called but SDL isn't ready" << std::endl;
+            std::cout << "Window::CreateWindow() Called but SDL isn't ready" << std::endl;
         }
 
         // Create Window
@@ -35,12 +35,12 @@ namespace Vertex3D {
     }
 
 
-    void SDLWindow::Run() {
+    void Window::Run() {
         if ( !this->_ready ) {
-            std::cout << "SDLWindow::Run() Called but SDL isn't ready" << std::endl;
+            std::cout << "Window::Run() Called but SDL isn't ready" << std::endl;
         }
         if ( !this->window ) {
-            std::cout << "SDLWindow::Run() Called but no SDL Window was found" << std::endl;
+            std::cout << "Window::Run() Called but no SDL Window was found" << std::endl;
         }
 
         bool _quit = false;
@@ -61,13 +61,13 @@ namespace Vertex3D {
         std::cout << "Bye!" << std::endl;
     }
 
-    bool SDLWindow::RequestQuit() {
+    bool Window::RequestQuit() {
         return this->_running == false;
     }
 
 
     // Runs every poll event, handles window
-    void SDLWindow::Update(SDL_Event event) {
+    void Window::Update(SDL_Event event) {
         if (event.type == SDL_EVENT_WINDOW_RESIZED) {
             SDL_GetWindowSize(this->window, &this->width, &this->height);
         }
@@ -77,7 +77,7 @@ namespace Vertex3D {
         this->handler->Update(&event);
     }
 
-    void SDLWindow::Cleanup() {
+    void Window::Cleanup() {
         SDL_DestroyWindow(this->window);
         SDL_PumpEvents();
         SDL_Quit();

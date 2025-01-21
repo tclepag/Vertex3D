@@ -14,7 +14,7 @@
 
 namespace Vertex3D {
     class EngineCore;
-    class SDLWindow {
+    class Window {
 public:
     int width = 800;
     int height = 600;
@@ -23,7 +23,7 @@ public:
     SDL_Window* window;
     SDL_Renderer* renderer;
 
-    SDLWindow();
+    Window();
     void SetupWindow(const char* title, const char* iconPath, int w, int h, SDL_WindowFlags flags);
 
     void Run(); // Starts the process
