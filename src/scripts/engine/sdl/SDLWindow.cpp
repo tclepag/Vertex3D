@@ -8,13 +8,14 @@ namespace Vertex3D {
     SDLWindow::SDLWindow() {
         if (SDL_Init(SDL_INIT_VIDEO) < 0) {
             std::cout << "SDL_Init Error: " << SDL_GetError() << std::endl;
+            this->_running = false;
             exit(-1);
         }
-        _ready = true;
+        this->_ready = true;
     }
 
     void SDLWindow::SetupWindow(const char *title, const char* iconPath, int w, int h, SDL_WindowFlags flags) {
-        if ( !_ready ) {
+        if ( !this->_ready ) {
             std::cout << "SDLWindow::CreateWindow() Called but SDL isn't ready" << std::endl;
         }
 
@@ -35,10 +36,10 @@ namespace Vertex3D {
 
 
     void SDLWindow::Run() {
-        if ( !_ready ) {
+        if ( !this->_ready ) {
             std::cout << "SDLWindow::Run() Called but SDL isn't ready" << std::endl;
         }
-        if ( !window ) {
+        if ( !this->window ) {
             std::cout << "SDLWindow::Run() Called but no SDL Window was found" << std::endl;
         }
 
@@ -56,8 +57,14 @@ namespace Vertex3D {
         }
 
         // SDL No longer needs to process, exit the application
-        this->handler->~EngineCore();
+        this->_running = false;
+        std::cout << "Bye!" << std::endl;
     }
+
+    bool SDLWindow::RequestQuit() {
+        return this->_running == false;
+    }
+
 
     // Runs every poll event, handles window
     void SDLWindow::Update(SDL_Event event) {

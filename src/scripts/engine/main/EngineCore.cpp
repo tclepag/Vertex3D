@@ -19,12 +19,15 @@ namespace Vertex3D {
         auto *wnd = new SDLWindow();
         wnd->handler = this;
 
-        wnd->SetupWindow("Vertex3D", "src/bin/materials/tex/app/app.png", 800, 600, SDL_WINDOW_OPENGL | SDL_WINDOW_RESIZABLE);
+        wnd->SetupWindow("Vertex3D", "src/bin/materials/textures/app/app.png", 800, 600, SDL_WINDOW_OPENGL | SDL_WINDOW_RESIZABLE);
         wnd->Run();
         this->window = wnd;
     }
 
-    void EngineCore::Update(SDL_Event* event) const {
+    void EngineCore::Update(SDL_Event* event) {
+        if (!this->update) {
+            return;
+        }
         this->gl->Update(event);
         if (this->renderer) {
             int renderer_ratio = this->renderer->width / this->renderer->height;
@@ -38,11 +41,17 @@ namespace Vertex3D {
 
             this->renderer->Render(event);
         }
+
+        if (this->window->RequestQuit()) {
+            this->update = false;
+            this->~EngineCore();
+        }
     }
 
     EngineCore::~EngineCore() {
         this->gl->~OpenGLH();
         this->window->~SDLWindow();
+        this->running = false;
     }
 
 } // Vertex3D

@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/lepag/CLionProjects/Vertex3D
+# Install script for directory: C:/Users/lepag/Documents/GitHub/Vertex3D
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,17 +34,17 @@ endif()
 
 # Set path to fallback-tool for dependency-resolution.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/Program Files/JetBrains/CLion 2024.3.1.1/bin/mingw/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "C:/Program Files/JetBrains/CLion 2024.3/bin/mingw/bin/objdump.exe")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glad-build/cmake_install.cmake")
+  include("C:/Users/lepag/Documents/GitHub/Vertex3D/cmake-build-debug/_deps/glad-build/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/_deps/glm-build/cmake_install.cmake")
+  include("C:/Users/lepag/Documents/GitHub/Vertex3D/cmake-build-debug/_deps/glm-build/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -62,6 +62,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "C:/Users/lepag/Documents/GitHub/Vertex3D/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

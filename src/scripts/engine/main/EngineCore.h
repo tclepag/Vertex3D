@@ -19,15 +19,18 @@ namespace Vertex3D {
       SDLWindow* window{};
       OpenGLH* gl{};
       Renderer* renderer{};
+      bool running = true;
 
       EngineCore();
 
         void SetupWindow();
         void SetupOpenGL();
         void SetupRenderer();
-        void Update(SDL_Event* event) const;
+        void Update(SDL_Event* event);
 
       ~EngineCore();
+    private:
+        bool update = true;
 };
 
 } // Vertex3D

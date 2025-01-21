@@ -1,4 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2024.3.1.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2024.3.1.1/bin/ninja/win/x64/ninja.exe" -DCMAKE_TOOLCHAIN_FILE=C:\Users\lepag\.vcpkg-clion\vcpkg\scripts\buildsystems\vcpkg.cmake -G Ninja -S C:\Users\lepag\CLionProjects\Vertex3D -B C:\Users\lepag\CLionProjects\Vertex3D\cmake-build-debug
+"C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "MinGW Makefiles" -S C:\Users\lepag\Documents\GitHub\Vertex3D -B C:\Users\lepag\Documents\GitHub\Vertex3D\cmake-build-debug
 CMake Deprecation Warning at cmake-build-debug/_deps/glad-src/CMakeLists.txt:1 (cmake_minimum_required):
   Compatibility with CMake < 3.5 will be removed from a future version of
   CMake.
@@ -9,9 +9,23 @@ CMake Deprecation Warning at cmake-build-debug/_deps/glad-src/CMakeLists.txt:1 (
 
 -- GLM: Version 1.0.2
 -- GLM: Build with C++ features auto detection
+-- Check if compiler accepts -pthread
+-- Check if compiler accepts -pthread - yes
+-- Found Threads: TRUE
+-- Found SDL: C:/SDL/lib/SDL3.lib;C:/SDL/lib/SDL3_image.lib
 -- FOUND SDL: C:/SDL/lib/SDL3.lib;C:/SDL/lib/SDL3_image.lib
 -- FOUND SDL LIBRARIES: C:/SDL/lib/SDL3.lib;C:/SDL/lib/SDL3_image.lib
+-- Found OpenGL: opengl32
 -- Found OpenGL: opengl32;glu32
--- Configuring done (4.0s)
--- Generating done (0.4s)
--- Build files have been written to: C:/Users/lepag/CLionProjects/Vertex3D/cmake-build-debug
+-- Configuring done (1.7s)
+CMake Error at CMakeLists.txt:93 (add_executable):
+  Cannot find source file:
+
+    src/bin/include/imgui/imgui.h
+
+
+CMake Error at CMakeLists.txt:93 (add_executable):
+  No SOURCES given to target: Vertex3D
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.

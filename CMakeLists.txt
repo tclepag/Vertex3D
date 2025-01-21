@@ -6,50 +6,21 @@ project(Vertex3D)
 include(FetchContent)
 
 set(CMAKE_CXX_STANDARD 23)
-set(CMAKE_GENERATOR_PLATFORM "x86")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
 
 # ImGui Source
 set(IMGUI_SRC
-        src/bin/include/imgui/imgui.h
-        src/bin/include/imgui/imgui.cpp
-        src/bin/include/imgui/imgui_draw.cpp
-        src/bin/include/imgui/imgui_tables.cpp
-        src/bin/include/imgui/imgui_widgets.cpp
-        src/bin/include/imgui/imgui_demo.cpp
-        src/bin/include/imgui/imgui_impl_opengl2.cpp
-        src/bin/include/imgui/imgui_impl_opengl2.h
-        src/bin/include/imgui/imgui_impl_opengl3.cpp
-        src/bin/include/imgui/imgui_impl_opengl3.h
-        src/bin/include/imgui/imgui_impl_opengl3_loader.h
+
 )
 
 # GFX Source
 set(GFX_SRC
-        src/bin/cpp/engine/gfx/Shader.cpp
-        src/bin/cpp/engine/gfx/Shader.h
-        src/bin/cpp/engine/gfx/include/VAO.cpp
-        src/bin/cpp/engine/gfx/include/VAO.h
-        src/bin/cpp/engine/gfx/include/VBO.cpp
-        src/bin/cpp/engine/gfx/include/VBO.h
-        src/bin/cpp/engine/gfx/include/EBO.cpp
-        src/bin/cpp/engine/gfx/include/EBO.h
+
 )
 
 # Base Engine Sources
 set(ENGINE_SRC
-        src/bin/cpp/engine/main/EngineCore.cpp
-        src/bin/cpp/engine/main/EngineCore.h
-        src/bin/cpp/engine/opgl/OpenGLH.cpp
-        src/bin/cpp/engine/opgl/OpenGLH.h
-        src/bin/cpp/engine/sdl/SDLWindow.cpp
-        src/bin/cpp/engine/sdl/SDLWindow.h
-        src/bin/cpp/engine/gfx/Renderer.cpp
-        src/bin/cpp/engine/gfx/Renderer.h
-        src/bin/cpp/engine/util/Signals/VSignal.h
-        src/bin/cpp/engine/util/Signals/VSignalSubscription.h
-        src/bin/cpp/engine/util/debug/Debug.cpp
-        src/bin/cpp/engine/util/debug/Debug.h
+
 )
 
 # Glad Packages

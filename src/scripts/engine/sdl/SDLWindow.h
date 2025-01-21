@@ -26,13 +26,14 @@ public:
     SDLWindow();
     void SetupWindow(const char* title, const char* iconPath, int w, int h, SDL_WindowFlags flags);
 
-    void Run();
-    void CallDraw();
-    void CallResize(int w, int h);
-    void Cleanup();
+    void Run(); // Starts the process
+    void CallDraw(); // Call Draw to screen
+    void CallResize(int w, int h); // Call resize
+    void Cleanup(); // Clean the window
+    bool RequestQuit(); // Is the window trying to close?
 private:
     bool _ready = false;
-    bool _running = false;
+    bool _running = true;
     bool _update = false;
     void Update(SDL_Event event);
     void Draw();
